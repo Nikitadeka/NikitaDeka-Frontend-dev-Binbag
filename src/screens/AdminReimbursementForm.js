@@ -171,6 +171,7 @@ function AdminReimbursementForm() {
                       name="email"
                       value={adminCredentials.email}
                       onChange={handleInputChange}
+                      autoComplete="new-password"
                     />
                   </div>
                   <div>
@@ -181,6 +182,7 @@ function AdminReimbursementForm() {
                       name="password"
                       value={adminCredentials.password}
                       onChange={handleInputChange}
+                      autoComplete="new-password"
                     />
 
                    <label style={{ marginLeft: '10px' }}>

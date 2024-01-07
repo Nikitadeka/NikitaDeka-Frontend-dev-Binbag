@@ -68,6 +68,7 @@ function EmployeeReimbursementForm() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
+                  autoComplete="new-password" // Prevent previous form filling
                 />
                 <label>Password:</label>
                 <input
@@ -76,6 +77,7 @@ function EmployeeReimbursementForm() {
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
+                  autoComplete="new-password" // Prevent previous form filling
                 />
                 <label style={{ marginLeft: '10px' }}>
                   <input
