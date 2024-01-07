@@ -169,7 +169,7 @@ const ReimbursementForm = () => {
               <input
                 type="text"
                 name="materialTransportionDetails"
-                value={formData.materialDetails}
+                value={formData.materialTransportationDetails}
                 onChange={handleInputChange}
               />
             </div>

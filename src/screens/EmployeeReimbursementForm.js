@@ -10,6 +10,7 @@ function EmployeeReimbursementForm() {
 
   const [errors, setErrors] = useState({});
   const [showLoginSection, setShowLoginSection] = useState(true); // Set to true initially
+  const [showPassword, setShowPassword] = useState(false); // Added state for show/hide password
   const navigate = useNavigate();
 
   const handleInputChange = (e) => {
@@ -70,12 +71,20 @@ function EmployeeReimbursementForm() {
                 />
                 <label>Password:</label>
                 <input
-                  type="password"
+                  type={showPassword ? 'text' : 'password'} // Toggle between text and password
                   className="form-control"
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
                 />
+                <label style={{ marginLeft: '10px' }}>
+                  <input
+                    type="checkbox"
+                    checked={showPassword}
+                    onChange={() => setShowPassword(!showPassword)}
+                  />
+                  Show Password
+                </label>
 
                 <button className="btn btn-secondary mt-3" onClick={handleBack}>
                   Back

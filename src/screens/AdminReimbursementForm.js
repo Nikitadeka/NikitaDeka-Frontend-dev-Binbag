@@ -108,6 +108,7 @@ function AdminReimbursementForm() {
   });
 
   const [errors, setErrors] = useState({});
+  const [showPassword, setShowPassword] = useState(false);
   const [isLoggedIn, setLoggedIn] = useState(false);
   const navigate = useNavigate();
 
@@ -175,12 +176,22 @@ function AdminReimbursementForm() {
                   <div>
                     <label htmlFor="password">Password:</label>
                     <input
-                      type="password"
+                      type={showPassword ? 'text' : 'password'} // Toggle between text and password
                       className="form-control"
                       name="password"
                       value={adminCredentials.password}
                       onChange={handleInputChange}
                     />
+
+                   <label style={{ marginLeft: '10px' }}>
+                      <input
+                        type="checkbox"
+                        checked={showPassword}
+                        onChange={() => setShowPassword(!showPassword)}
+                      />
+                      Show Password
+                    </label>
+
                   </div>
                   {errors.login && <div className="error">{errors.login}</div>}
                   <button type="submit" className="btn btn-primary mt-3">
