@@ -1,113 +1,71 @@
-/* Style for EmployeeReimbursementForm */
-.employee-form {
-    /* Add specific styles for the employee form if needed */
-    color: #333; /* Example color */
-  }
-  
-  .employee-form label {
-    font-weight: bold;
-  } 
-  
-  .employee-form input[type="text"],
-  .employee-form input[type="checkbox"],
-  .employee-form textarea,
-  .employee-form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .employee-form .error {
-    color: #ff0000; /* Error text color */
-    margin-top: 5px;
-  }
-  
-  .employee-form button {
-    background-color: #007bff; /* Button color */
-    color: #fff; /* Text color */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* Style for AdminReimbursementForm */
-  .admin-form {
-    /* Add specific styles for the admin form if needed */
-    color: #555; /* Example color */
-  }
-  
-  .admin-form label {
-    font-weight: bold;
-  }
-  
-  .admin-form input[type="text"],
-  .admin-form input[type="checkbox"],
-  .admin-form textarea,
-  .admin-form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .admin-form .error {
-    color: #ff0000; /* Error text color */
-    margin-top: 5px;
-  }
-  
-  .admin-form button {
-    background-color: #28a745; /* Button color */
-    color: #fff; /* Text color */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* Additional style for Hello Admin message */
-  .admin-welcome-message {
-    background-color: #e10a0a; /* Red background */
-    color: #fff; /* White text color */
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Style for the main container */
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Style for the form container */
-  .form-container {
-    background-color: #dc8888; /* Red background */
-    color: #333333; /* Dark text color */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(204, 198, 201, 0.916);
-  }
-  
-  /* Style for the role selector */
-  .role-selector {
-    margin-bottom: 20px;
-  }
-  
-  /* Style for role selector label */
-  .role-selector label {
-    color: #ff002f; /* Blue label color */
-  }
-  
-  /* Style for checked role selector label */
-  .role-selector input:checked + label {
-    color: #18e64f; /* Darker blue for checked label */
-  }
+body {
+  font-family: 'Arial', sans-serif;
+
+  margin: 0;
+  padding: 0;
+  background-color: #dc4f4f;
+}
+
+.container {
+  max-width: 80px;
+  margin: 0 center;
+  background-color: #e6e2e8;
+}
+
+form {
+  background-color: #a598a3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(93, 227, 4, 0.1);
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #d31616;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input,
+select,
+textarea {
+  width: 30%;
+  padding: 8px;
+  box-sizing: content-box;
+  border: 1px solid #dc4f4f;
+  border-radius: 4px;
+}
+
+checkbox,
+radio {
+  margin-right: 5px;
+  text-align: center;
+}
+
+button {
+  background-color: #0fd10f;
+  color: #31178d;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #9583b3;
+}
+
+.error {
+  color: red;
+}
